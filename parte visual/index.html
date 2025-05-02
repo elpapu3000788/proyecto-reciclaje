@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Social Reciclaje</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #a5b0ee;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      align-items: center;
+    }
+
+    header nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+
+    .sidebar-left, .sidebar-right {
+      width: 20%;
+      padding: 10px;
+    }
+
+    .main-content {
+      width: 60%;
+      padding: 10px;
+    }
+
+    .profile-card {
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    .profile-card .avatar {
+      background: rgb(9, 68, 9);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .post {
+      background: #6dfa74;
+      border: 1px solid #7ae95f;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .post img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    .reactions {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    .comment-box {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .comment-box input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #90f767;
+      border-radius: 5px;
+    }
+
+    .ad-box {
+      background: #81f779;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #8cee8c;
+    }
+
+    footer {
+      background: #75e95e;
+      text-align: right;
+      padding: 10px 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <input type="text" placeholder="🔍 Buscar">
+    <nav>
+      <a href="#">🏠 menú</a>
+      <a href="#">📁 mis proyectos</a>
+      <a href="#">🔔 notificaciones</a>
+      <a href="#">👤 perfil</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar izquierda -->
+    <div class="sidebar-left">
+      <div class="profile-card">
+        <div class="avatar">M</div>
+        <strong>Miguel gonzalez</strong><br>
+        Proyectos creados (25)<br>
+        <button>Ver perfil</button>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+      <div class="post">
+        <div><strong>Melisa</strong> - <a href="#">Seguir</a></div>
+        <p>
+          ¿Deseas darle uso a las botellas plásticas...? <br>
+          <strong>#recicplus</strong>
+        </p>
+        <img src="descarga.jpg" alt="descarga.jpg">
+        <div>💬 Diego romero y otras 66</div>
+        <div class="reactions">
+          <span>👍 Me gusta</span>
+          <span>💬 Comentar</span>
+          <span>⭐ Mi colecta</span>
+          <span>🔁 Compartir</span>
+        </div>
+        <div class="comment-box">
+          <div class="avatar">M</div>
+          <input type="text" placeholder="Añadir comentario">
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar derecha -->
+    <div class="sidebar-right">
+      <div class="ad-box">
+        <p>Conoce aplicaciones relacionadas</p>
+        <strong>RECICPLUS</strong><br>
+        <button>Abrir</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Kevin Muñoz (1)
+  </footer>
+
+</body>
+</html>
